@@ -130,16 +130,17 @@ This project shows ability to:
 ##  Screenshots
 
 ###  Home Page
-![Home Page](Images.previews/HomePage.jpeg)
-
 Modern luxury homepage with hero section, featured products, and elegant UI design.
+
+![Home Page](Images.previews/HomePage.jpeg)
 
 ---
 
 ###  Product Page
+Interactive product page with image gallery, tabs system, and detailed product layout.
+
 ![Product Page](Images.previews/ProductPage.jpeg)
 
-Interactive product page with image gallery, tabs system, and detailed product layout.
 ---
 
 ##  Folder Structure
