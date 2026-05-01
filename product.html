@@ -1,11 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Product | LUXORA</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="logo">LUXORA</div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="product.html">Product</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <span class="cart">🛒</span>
+            <div class="menu-toggle">☰</div>
+        </div>
+
+        <div class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="product.html">Product</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+
+    <!-- ================= PRODUCT SECTION ================= -->
+    <section class="product-page">
+
+        <!-- LEFT: IMAGE GALLERY -->
+        <div class="product-gallery">
+
+            <img id="main-image" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" class="main-image">
+
+            <div class="thumbnail-row">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" onclick="changeImage(this)">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552" onclick="changeImage(this)">
+                <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad" onclick="changeImage(this)">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" onclick="changeImage(this)">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80"
+                    onclick="changeImage(this)">
+                <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d" onclick="changeImage(this)">
+                <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&h=1000&q=80"
+                    onclick="changeImage(this)">
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT: PRODUCT DETAILS -->
+        <div class="product-details">
+
+            <span class="badge">Best Seller</span>
+
+            <h1>Luxury Minimalist Watch</h1>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span>(128 reviews)</span>
+            </div>
+
+            <p class="price">$199</p>
+
+            <p class="description">
+                Designed for modern elegance, this premium watch combines minimalist design
+                with high-quality craftsmanship. Perfect for everyday luxury.
+            </p>
+
+            <!-- OPTIONS -->
+            <div class="options">
+                <label>Color:</label>
+                <select>
+                    <option>Black</option>
+                    <option>Silver</option>
+                    <option>Gold</option>
+                </select>
+
+                <label>Quantity:</label>
+                <input type="number" value="1" min="1">
+            </div>
+
+            <!-- ACTION BUTTONS -->
+            <div class="actions">
+                <button class="btn primary">Add to Cart</button>
+                <button class="btn secondary">Buy Now</button>
+            </div>
+
+            <!-- TRUST INFO -->
+            <div class="trust-info">
+                <p>✔ Free Shipping</p>
+                <p>✔ 30-Day Return Guarantee</p>
+                <p>✔ Secure Payment</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TABS ================= -->
+    <section class="product-tabs">
+
+        <div class="tabs">
+            <button class="tab active" onclick="openTab('desc')">Description</button>
+            <button class="tab" onclick="openTab('specs')">Specifications</button>
+            <button class="tab" onclick="openTab('reviews')">Reviews</button>
+        </div>
+
+        <div id="desc" class="tab-content active">
+            <p>
+                This watch is crafted with precision materials and modern design.
+                Built for durability, elegance, and performance.
+            </p>
+        </div>
+
+        <div id="specs" class="tab-content">
+            <ul>
+                <li>Material: Stainless Steel</li>
+                <li>Water Resistant</li>
+                <li>Battery: 2 years</li>
+                <li>Warranty: 1 year</li>
+            </ul>
+        </div>
+
+        <div id="reviews" class="tab-content">
+            <p>"Amazing product, worth every dollar!" - John D.</p>
+            <p>"High quality and fast shipping!" - Sarah K.</p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= RELATED PRODUCTS ================= -->
+    <section class="products section">
+        <h2>Related Products</h2>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80">
+                <h3>Sneakers</h3>
+                <p>$129</p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad">
+                <h3>Leather Bag</h3>
+                <p>$249</p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e">
+                <h3>Headphones</h3>
+                <p>$89</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="cta">
+        <h2>Limited Stock Available</h2>
+        <p>Order now before it's gone</p>
+        <a href="#" class="btn primary">Buy Now</a>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>LUXORA</h3>
+                <p>Premium lifestyle products designed for modern living.</p>
+            </div>
+
+            <div>
+                <h4>Links</h4>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div>
+                <h4>Support</h4>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">FAQ</a>
+            </div>
+
+            <div>
+                <h4>Newsletter</h4>
+                <input type="email" placeholder="Your email">
+                <button class="btn primary">Subscribe</button>
+            </div>
+
+        </div>
+
+        <p class="copyright">© 2026 LUXORA. All rights reserved.</p>
+        <div class="signature">
+            Designed & Developed by <a href="https://github.com/edouardkne" target="_blank">EdoDev</a>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
