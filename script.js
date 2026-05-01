@@ -102,6 +102,92 @@ function openTab(tabId) {
 
 window.openTab = openTab;
 
+
+/* =========================
+   CONTACT FORM VALIDATION
+========================= */
+
+const form = document.getElementById("contactForm");
+const statusText = document.getElementById("formStatus");
+
+if (form) {
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        if (!name || !email || !message) {
+            statusText.textContent = "Please fill all fields.";
+            statusText.style.color = "red";
+            return;
+        }
+
+        statusText.textContent = "Message sent successfully ✔";
+        statusText.style.color = "limegreen";
+
+        form.reset();
+    });
+}
+
+
+/* =========================
+   BUTTON RIPPLE EFFECT
+========================= */
+
+document.querySelectorAll(".btn").forEach(button => {
+    button.addEventListener("click", function (e) {
+
+        const ripple = document.createElement("span");
+        ripple.classList.add("ripple");
+
+        const rect = this.getBoundingClientRect();
+        ripple.style.left = `${e.clientX - rect.left}px`;
+        ripple.style.top = `${e.clientY - rect.top}px`;
+
+        this.appendChild(ripple);
+
+        setTimeout(() => {
+            ripple.remove();
+        }, 600);
+    });
+});
+
+
+/* =========================
+   PRODUCT PRICE HOVER UX (SUBTLE FEEL)
+========================= */
+
+document.querySelectorAll(".product-card").forEach(card => {
+    card.addEventListener("mouseenter", () => {
+        card.style.boxShadow = "0 20px 40px rgba(0,0,0,0.8)";
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.boxShadow = "0 10px 30px rgba(0,0,0,0.6)";
+    });
+});
+
+
+/* =========================
+   SIMPLE LOADING EXPERIENCE
+========================= */
+
+window.addEventListener("load", () => {
+    document.body.style.opacity = "1";
+});
+
+
+/* =========================
+   SMOOTH PAGE FADE-IN
+========================= */
+
+document.body.style.opacity = "0";
+document.body.style.transition = "0.6s ease";
+
+
+
 /* =========================
    SCROLL REVEAL FOR SECTIONS
 ========================= */
