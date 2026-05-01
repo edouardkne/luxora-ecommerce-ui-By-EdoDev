@@ -1,11 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Contact | LUXORA</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="logo">LUXORA</div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="product.html">Product</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <span class="cart">🛒</span>
+            <div class="menu-toggle">☰</div>
+        </div>
+
+        <div class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="product.html">Product</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+
+    <!-- ================= HEADER ================= -->
+    <section class="page-header">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you</p>
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section class="contact-container">
+
+        <!-- LEFT: FORM -->
+        <div class="contact-form">
+
+            <h2>Send a Message</h2>
+
+            <form id="contactForm">
+
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label>Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="subject" required>
+                    <label>Subject</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="message" rows="5" required></textarea>
+                    <label>Message</label>
+                </div>
+
+                <button type="submit" class="btn primary">Send Message</button>
+
+                <p id="formStatus"></p>
+
+            </form>
+
+        </div>
+
+
+        <!-- RIGHT: INFO -->
+        <div class="contact-info">
+
+            <h2>Contact Information</h2>
+
+            <p><strong>Email:</strong> edouard.kne.3@gmail.com</p>
+            <p><strong>Phone:</strong> +243 974 602 734</p>
+            <p><strong>Location:</strong> Bukavu, DR Congo</p>
+
+            <div class="socials">
+                <a href="https://www.facebook.com/sedar.senghor.9889" target="_blank">Facebook</a>
+                <a href="https://wa.me/243974602734" target="_blank">WhatsApp</a>
+                <a href="mailto:edouard.kne.3@gmail.com">Email</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAP ================= -->
+    <section class="map">
+        <iframe src="https://maps.google.com/maps?q=Bukavu&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
+    <!-- ================= CTA ================= -->
+    <section class="cta">
+        <h2>Need Help Fast?</h2>
+        <p>Our team responds within 24 hours</p>
+        <a href="#" class="btn primary">Start Shopping</a>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>LUXORA</h3>
+                <p>Premium lifestyle products designed for modern living.</p>
+            </div>
+
+            <div>
+                <h4>Links</h4>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div>
+                <h4>Support</h4>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">FAQ</a>
+            </div>
+
+            <div>
+                <h4>Newsletter</h4>
+                <input type="email" placeholder="Your email">
+                <button class="btn primary">Subscribe</button>
+            </div>
+
+        </div>
+
+        <p class="copyright">© 2026 LUXORA. All rights reserved.</p>
+        <div class="signature">
+            Designed & Developed by <a href="https://github.com/edouardkne" target="_blank">EdoDev</a>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
