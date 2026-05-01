@@ -1,11 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Shop | LUXORA</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="logo">LUXORA</div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html" class="active">Shop</a>
+            <a href="product.html">Product</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <span class="cart">🛒</span>
+            <div class="menu-toggle">☰</div>
+        </div>
+
+        <div class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="product.html">Product</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+
+    <!-- ================= HEADER ================= -->
+    <section class="page-header">
+        <h1>Shop Collection</h1>
+        <p>Explore premium products crafted for excellence</p>
+    </section>
+
+
+    <!-- ================= SHOP LAYOUT ================= -->
+    <section class="shop-container">
+
+        <!-- ===== FILTER SIDEBAR ===== -->
+        <aside class="filters">
+
+            <h3>Categories</h3>
+            <ul>
+                <li><input type="checkbox"> Watches</li>
+                <li><input type="checkbox"> Sneakers</li>
+                <li><input type="checkbox"> Bags</li>
+                <li><input type="checkbox"> Accessories</li>
+            </ul>
+
+            <h3>Price</h3>
+            <input type="range" min="50" max="500">
+
+            <h3>Sort By</h3>
+            <select>
+                <option>Default</option>
+                <option>Price Low → High</option>
+                <option>Price High → Low</option>
+                <option>Newest</option>
+            </select>
+
+        </aside>
+
+
+        <!-- ===== PRODUCTS GRID ===== -->
+        <div class="shop-content">
+
+            <!-- TOP BAR -->
+            <div class="shop-top">
+                <p>Showing 12 Products</p>
+            </div>
+
+            <!-- GRID -->
+            <div class="product-grid">
+
+                <!-- PRODUCT -->
+                <div class="product-card">
+                    <span class="badge">Best Seller</span>
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+                    <h3>Luxury Watch</h3>
+                    <p class="price">$199</p>
+                    <a href="product.html" class="btn-small">View</a>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge new">New</span>
+                    <img
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80">
+                    <h3>Sneakers</h3>
+                    <p class="price">$129</p>
+                    <a href="product.html" class="btn-small">View</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad">
+                    <h3>Leather Bag</h3>
+                    <p class="price">$249</p>
+                    <a href="product.html" class="btn-small">View</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e">
+                    <h3>Headphones</h3>
+                    <p class="price">$89</p>
+                    <a href="product.html" class="btn-small">View</a>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Sale</span>
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+                    <h3>Jacket</h3>
+                    <p class="price">$159</p>
+                    <a href="product.html" class="btn-small">View</a>
+                </div>
+
+                <div class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1200&q=80">
+                    <h3>Luxury Perfume</h3>
+                    <p class="price">$99</p>
+                    <a href="product.html" class="btn-small">View</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="cta">
+        <h2>Limited Stock Available</h2>
+        <p>Don't miss your chance to own premium quality</p>
+        <a href="#" class="btn primary">Shop Now</a>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>LUXORA</h3>
+                <p>Premium lifestyle products designed for modern living.</p>
+            </div>
+
+            <div>
+                <h4>Links</h4>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div>
+                <h4>Support</h4>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">FAQ</a>
+            </div>
+
+            <div>
+                <h4>Newsletter</h4>
+                <input type="email" placeholder="Your email">
+                <button class="btn primary">Subscribe</button>
+            </div>
+
+        </div>
+
+        <p class="copyright">© 2026 LUXORA. All rights reserved.</p>
+        <div class="signature">
+            Designed & Developed by <a href="https://github.com/edouardkne" target="_blank">EdoDev</a>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
