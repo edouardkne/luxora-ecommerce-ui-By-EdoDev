@@ -65,7 +65,7 @@ const observer = new IntersectionObserver(entries => {
 cards.forEach(card => {
     card.style.opacity = "0";
     card.style.transform = "translateY(40px)";
-    card.style.transition = "0.6s ease";
+    card.style.transition = "0.3s ease";
     observer.observe(card);
 });
 
@@ -184,7 +184,7 @@ window.addEventListener("load", () => {
 ========================= */
 
 document.body.style.opacity = "0";
-document.body.style.transition = "0.6s ease";
+document.body.style.transition = "0.1s ease";
 
 
 
@@ -208,7 +208,7 @@ const sectionObserver = new IntersectionObserver(entries => {
 sections.forEach(sec => {
     sec.style.opacity = "0";
     sec.style.transform = "translateY(40px)";
-    sec.style.transition = "0.8s ease";
+    sec.style.transition = "0.4s ease";
     sectionObserver.observe(sec);
 });
 
