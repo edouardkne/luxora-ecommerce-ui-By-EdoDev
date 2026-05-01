@@ -143,6 +143,8 @@ Interactive product page with image gallery, tabs system, and detailed product l
 ---
 
 ##  Folder Structure
+
+```plaintext
 /luxora-store
 │
 ├── index.html
@@ -154,8 +156,10 @@ Interactive product page with image gallery, tabs system, and detailed product l
 ├── styles.css
 ├── script.js
 │
-└── Images preview
-
+└── Images.previews/
+        ├── HomePage.jpeg
+        └── ProductPage.jpeg
+```
 
 ---
 
